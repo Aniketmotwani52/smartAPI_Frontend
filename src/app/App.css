@@ -1,0 +1,73 @@
+.app-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  overflow: hidden;
+  transition: width 0.25s ease, padding 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.app-sidebar.collapsed {
+  width: 88px;
+}
+
+.app-sidebar-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.app-sidebar-brand {
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.app-sidebar-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-color: #d0d7de;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.app-sidebar-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.app-nav-link {
+  color: #495057;
+  min-height: 48px;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.app-nav-link:hover {
+  background-color: #e9ecef;
+  color: #212529;
+  transform: translateX(2px);
+}
+
+.app-nav-link.active {
+  background-color: #0d6efd;
+  color: #fff !important;
+}
+
+.app-topbar {
+  min-height: 80px;
+}
+
+.app-content {
+  overflow: auto;
+}
+
+.app-nav-label,
+.app-nav-collapsed-label {
+  transition: opacity 0.2s ease;
+}
+
+.app-nav-collapsed-label {
+  width: 1.75rem;
+  text-align: center;
+  font-weight: 600;
+}
