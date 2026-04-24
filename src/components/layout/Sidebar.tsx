@@ -1,6 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+import Button from "../ui/Button";
 
 const navItems = [
   { to: "/dashboard", label: "Dashboard" },
@@ -18,7 +18,7 @@ interface SidebarProps {
 const Sidebar = ({ isCollapsed, onToggleSidebar }: SidebarProps) => {
   return (
     <aside
-      className={`app-sidebar d-flex flex-column vh-100 p-3 border-end bg-white ${
+      className={`app-sidebar d-flex flex-column vh-100 p-3 border-end ${
         isCollapsed ? "collapsed" : ""
       }`}
     >
