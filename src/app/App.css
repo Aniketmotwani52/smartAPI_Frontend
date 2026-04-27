@@ -399,6 +399,8 @@
 .proxy-request-card,
 .proxy-response-card {
   min-height: 100%;
+  overflow-y: auto;
+  max-height: 1000px;
 }
 
 .proxy-request-content {

@@ -17,7 +17,7 @@ interface ErrorResponse {
 }
 
 const apiClient = axios.create({
-  baseURL: "/",
+  baseURL: "/api",
   headers: {
     "Content-Type": "application/json",
   },
